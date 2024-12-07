@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    button{
+        position: absolute;
+        background-color: red;
+        top: 50%;
+        padding: 10px 20px;
+        border: none; 
+        border-radius: 30px;
+        color: white;
+        transition: 0.1s ease-in-out;
+    }
+    .content{
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+    .box{
+        
+        width: 450px;
+        height: 300px;
+
+    }
+    #btnYes{
+        left: 44%;
+        background-color: rgb(14, 165, 165);
+    }
+    #btnNo{
+        left:50%;
+    }
+
+    @media (max-width:576px) {
+        #btnYes{
+            left: 34%;
+        }
+        img{
+            padding-left: 35px;
+            margin-top: 60px;
+        }
+    }
+    img{
+        margin-left: 60px;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 45px;
+    }
+</style>
+
+<body>
+    <div class="content">
+        <img src="https://media3.giphy.com/media/XZaMYG2TqdPMczXBN3/giphy.gif?cid=6c09b952dwpinnfi1t36fryneeuuf8vckfi2dsde4dbufp0r&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="" width="200px">
+        <h1>Do you love me?😁</h1>
+        <div class="box">
+            <button id="btnNo">No</button>
+            <button id="btnYes">Yes</button>
+        </div>
+    </div>
+    
+</body>
+<script src="../js/03_NoBtn.js"></script>
+</html>
